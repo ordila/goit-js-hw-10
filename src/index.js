@@ -50,13 +50,13 @@ function onSelectElChange(event) {
 }
 
 function displayCatInfo(catInfo) {
-  const pizdecBlyat = catInfo[0];
+  const data = catInfo[0];
   const catInfoMarkup = `
    
-      <img src="${pizdecBlyat.url}" alt="Cat Image">
-      <h2 class="breed-name">${pizdecBlyat.breeds[0].name}</h2>
-      <p class="breed-description">${pizdecBlyat.breeds[0].description}</p>
-      <p class="breed-temperament">${pizdecBlyat.breeds[0].temperament}</p>
+      <img src="${data.url}" alt="Cat Image">
+      <h2 class="breed-name">${data.breeds[0].name}</h2>
+      <p class="breed-description">${data.breeds[0].description}</p>
+      <p class="breed-temperament">${data.breeds[0].temperament}</p>
    
   `;
   refs.catDiv.innerHTML = catInfoMarkup;
